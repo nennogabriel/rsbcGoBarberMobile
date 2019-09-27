@@ -61,7 +61,7 @@ export default function SignUp({ navigation }) {
             icon="lock-outline"
             secureTextEntry
             placeholder="Sua senha secreta"
-            ref={emailRef}
+            ref={passwordRef}
             returnKeyType="send"
             onSubmitEditing={handleSubmit}
             value={pasword}
