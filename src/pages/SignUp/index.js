@@ -43,7 +43,7 @@ export default function SignUp({ navigation }) {
             returnKeyType="next"
             onSubmitEditing={() => emailRef.current.focus()}
             value={name}
-            onChange={setName}
+            onChangeText={setName}
           />
           <FormInput
             icon="mail-outline"
@@ -55,7 +55,7 @@ export default function SignUp({ navigation }) {
             returnKeyType="next"
             onSubmitEditing={() => passwordRef.current.focus()}
             value={email}
-            onChange={setEmail}
+            onChangeText={setEmail}
           />
           <FormInput
             icon="lock-outline"
@@ -65,7 +65,7 @@ export default function SignUp({ navigation }) {
             returnKeyType="send"
             onSubmitEditing={handleSubmit}
             value={pasword}
-            onChange={setPasword}
+            onChangeText={setPasword}
           />
 
           <SubmitButton loading={loading} onPress={handleSubmit}>
